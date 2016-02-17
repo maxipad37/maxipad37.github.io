@@ -1,0 +1,25 @@
+# Site settings
+title: banananas
+email: letsgobanananas@gmail.com
+description: Lets go banananas. We want a world in which people smile and just do whatever they want to do. People who enjoy their live and live it to the fullest
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: http://www.banananas.nl
+
+# User setting
+owner: banananas
+email: letsgobanananas@gmail.com
+facebook_username:
+twitter_username:
+github_username:
+address:
+  - line: Schoolstraat 14A
+  - line: 2511AX, Den-Haag
+  # Feel free to add more lines here
+telephone:
+copyright: banananas inc.
+
+# API settings
+google_api_key: AIzaSyDDgVtyRf181Zavj_gAHq7vGYThii2fJnQ
+
+# Build settings
+markdown: kramdown
