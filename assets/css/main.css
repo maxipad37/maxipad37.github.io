@@ -689,7 +689,8 @@ nav.tn-nav-wrap {
   background: rgba(0, 0, 0, 0.5);
   padding: 0;
   position: fixed;
-  vertical-align: middle; }
+  vertical-align: middle;
+  z-index: 1; }
   .home-wrap header a {
     color: #999; }
     .home-wrap header a:hover, .home-wrap header a:active {
