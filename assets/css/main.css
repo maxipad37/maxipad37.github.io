@@ -721,6 +721,7 @@ nav.tn-nav-wrap {
   .home-wrap header .logo {
     height: 180px;
     width: 180px;
+    font-family: 'Comfortaa';
     max-width: 180px;
     background-image: url(/assets/img/logo-banananas.svg);
     background-repeat: no-repeat;
@@ -821,42 +822,44 @@ nav.tn-nav-wrap {
     margin-bottom: 10px; }
 
 @media (max-width: 775px) {
-  .home-wrap header {
-    width: 100%;
-    padding: 0px 0;
-    background: rgba(0, 0, 0, 0.5); }
-    .home-wrap header .header-position {
-      width: auto;
-      position: relative;
-      top: auto;
-      bottom: auto;
-      left: auto;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: row;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-                  -ms-grid-row-align: center;
-              align-items: center; }
-    .home-wrap header .site-nav {
-      display: none; }
-    .home-wrap header .logo {
-      height: 30px;
-      margin-top: 12px; }
-    .home-wrap header .mobile-nav-toggle {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      margin-top: 10px; }
-  .home-wrap .mobile-nav.is-open {
-    display: block;
-    -webkit-transform: translateY(0%);
-        -ms-transform: translateY(0%);
-            transform: translateY(0%); } }
+  .home-wrap {
+    overflow: hidden; }
+    .home-wrap header {
+      width: 100%;
+      padding: 0px 0;
+      background: rgba(0, 0, 0, 0.5); }
+      .home-wrap header .header-position {
+        width: auto;
+        position: relative;
+        top: auto;
+        bottom: auto;
+        left: auto;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                    -ms-grid-row-align: center;
+                align-items: center; }
+      .home-wrap header .site-nav {
+        display: none; }
+      .home-wrap header .logo {
+        height: 30px;
+        margin-top: 12px; }
+      .home-wrap header .mobile-nav-toggle {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        margin-top: 10px; }
+    .home-wrap .mobile-nav.is-open {
+      display: block;
+      -webkit-transform: translateY(0%);
+          -ms-transform: translateY(0%);
+              transform: translateY(0%); } }
 
 section.hero {
   background-image: url(../img/hero-bg.jpg);
