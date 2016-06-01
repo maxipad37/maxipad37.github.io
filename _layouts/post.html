@@ -1,9 +1,16 @@
 ---
 layout: default
 ---
- 
-{{ content }}
+
+<div class="home-wrap">
+
+  {% include page-header.html %}
+
+  <div class="home-sections">
+
+    {{ content }}
+
+  </div>
 
 
-
-{% include post-nav-bar.html %}
+</div>

@@ -1,0 +1,55 @@
+section.shop-articles
+
+  .shopitem-bundle
+    display: block
+    //background-color: pink
+    width: 20%
+    float: left
+    position: relative
+    margin: 2.5%
+    overflow: hidden
+
+    &:after
+      content: ''
+      display: block
+      padding-top: 100%
+
+  .shopitem-thumb
+    display: block
+    background:
+      size: cover
+    width: 100%
+    float: left
+    position: relative
+    //margin: 2.5%
+    overflow: hidden
+
+    &:after
+      content: ''
+      display: block
+      padding-top: 80%
+
+  .shopitem-meta
+    position: absolute
+    left: 10px
+    right: 0
+    bottom: -5px
+
+    //background: fade-out(pink, 0.2)
+    //color: white
+    //padding: 10px
+    //transform: translate(0%, 100%) scale(0.5)
+    //transition: all 200ms ease-in-out
+    //opacity: 0
+
+  .name
+    font-size: 18px
+
+  .price
+    font-size: 14px
+    font-weight: 600
+    color: orange
+
+  .shopitem-thumb:hover .shopitem-meta
+    opacity: 1
+    transform: translate(0%, 0%) scale(1)

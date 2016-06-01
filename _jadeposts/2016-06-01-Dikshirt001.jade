@@ -1,0 +1,35 @@
+:verbatim
+  ---
+  layout: post
+  title: Nog een dikker shirt
+  thumbnail: post-4.jpg
+  prijs: €30,00
+  itemprice: 30.00
+  description: Hoe dik wil je het hebben?
+  ---
+
+section.item-detail
+
+  .flex.flex--center
+  
+    .col-50
+      
+      .item-img-bundle
+        .item-img
+          //it's important to place / before assets, otherwise the link won't work
+          img(src='/assets/img/posts/thumbnails/{{page.thumbnail}}')
+      
+    .col-50
+      
+      a.addtocart-cta(href="")
+        .snipcart-add-item(
+          data-item-id="2",
+          data-item-name="{{page.title}}",
+          data-item-price="{{page.itemprice}}",
+          data-item-url="{{page.url}}",
+          data-item-description="{{page.description}}"
+          data-item-custom1-name="Maat"
+          data-item-custom1-options="Small|Medium|Large|Super Large"
+          data-item-custom1-required="true"
+          data-item-custom2-name="Kleur"
+          data-item-custom2-options="Zwart|Wit|Rood|Groen") KOOP DAN!!
