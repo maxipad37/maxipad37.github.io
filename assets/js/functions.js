@@ -6,6 +6,13 @@ $(function() {
   mobileNav();
 });
 
+$('#my-quantity').change(function() {
+    $('#my-button').data('item-quantity', $(this).val());
+});
+
+$('#my-size').change(function() {
+    $('#my-button').data('item-custom1-value', $(this).val());
+});
 
 function mobileNav() {
   $('.mobile-nav-toggle').on('click', function(){
@@ -14,7 +21,6 @@ function mobileNav() {
     else { $('.mobile-nav-toggle, .mobile-nav').addClass('is-open'); }
   });
 }
-
 
 function smoothScroll (duration) {
 	$('a[href^="#"]').on('click', function(event) {
@@ -136,12 +142,10 @@ function mentoringWideStart() {
     .siblings().removeClass('has-bubble-open');
 }
 
-
 $(window).resize(function() {
   if($(window).width() > 640){
     //mentoringWideStart();
   } else {
     //mentoringNarrowStart();
   }
-
 });

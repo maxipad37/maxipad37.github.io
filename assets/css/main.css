@@ -1090,6 +1090,12 @@ section.item-detail .item-img {
     display: block;
     padding-top: 80%; }
 
+section.item-detail .attribute {
+  display: inline-block;
+  width: 200px;
+  padding: 5px;
+  color: #ccc; }
+
 .home-wrap {
   display: -webkit-box;
   display: -webkit-flex;
