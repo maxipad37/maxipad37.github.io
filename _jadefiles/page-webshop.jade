@@ -1,14 +1,19 @@
 section.shop-articles
   .flex.flex--center
+    .col-100
+      .webshop-hero
+
+  .flex.flex--center
     .col-90
       .shopitem-wrap
       
-        {% for post in site.posts %}
+        |{% for post in site.posts %}
       
         .shopitem-bundle
-          a(href="{{post.url}}" style="background-image: url(img/posts/thumbnails/{{post.thumbnail}})").shopitem-thumb
+          a(href="{{post.url}}" style="background-image: url(assets/img/posts/thumbnails/{{post.thumbnail}})").shopitem-thumb
           a(href="{{post.url}}").shopitem-meta
             .name {{post.title}}
-            .price {{post.prijs}}
-            
-        {% endfor %}
+            .prijs {{post.prijs}}
+            hr
+             
+        |{% endfor %}

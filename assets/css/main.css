@@ -562,7 +562,35 @@ body {
     color: #e20a0a; }
 
 .addtocart-cta {
-  font-size: 20px; }
+  color: white;
+  font-size: 18px;
+  background: #39B54A;
+  text-align: center;
+  padding: 0.4em;
+  line-height: 1.25;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  cursor: pointer; }
+  .addtocart-cta:hover {
+    -webkit-box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.6);
+            box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.6);
+    color: #e20a0a; }
+
+.numbinput {
+  height: 50px;
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 20px;
+  float: left;
+  width: 50%; }
+  .numbinput input {
+    float: right;
+    font-size: 14px;
+    width: 40px;
+    height: 30px;
+    margin-top: -10px; }
 
 .flex-video {
   height: 0;
@@ -744,7 +772,7 @@ nav.tn-nav-wrap {
     width: 180px;
     font-family: 'Comfortaa';
     max-width: 180px;
-    background-image: url(/assets/img/logo-banananas.svg);
+    background-image: url(/assets/img/logo-banananas.png);
     background-repeat: no-repeat;
     background-position: left;
     background-size: contain;
@@ -771,6 +799,14 @@ nav.tn-nav-wrap {
           font-weight: 700;
           color: white;
           text-transform: uppercase; }
+  .home-wrap header .cart {
+    padding-top: 10px;
+    padding-right: 50px;
+    display: inline-block;
+    float: right;
+    color: white;
+    min-width: 160px;
+    text-align: center; }
   .home-wrap header .mobile-nav-toggle {
     display: none;
     float: right;
@@ -885,7 +921,8 @@ nav.tn-nav-wrap {
 section.hero {
   background-image: url(../img/hero-bg.jpg);
   background-position: center top;
-  background-size: cover; }
+  background-size: cover;
+  height: 85vh; }
   section.hero h2 {
     color: #2E2D33;
     font-size: 36px;
@@ -895,13 +932,12 @@ section.hero {
     margin-left: -20px; }
   section.hero p {
     margin-top: 250px;
-    margin-bottom: 200px;
-    color: black;
+    color: white;
     font-family: Montserrat;
-    font-weight: 400;
-    font-size: 36px; }
+    font-weight: 600;
+    font-size: 88px; }
   section.hero .home-lead {
-    margin-left: -20px; }
+    margin-left: 20px; }
   section.hero .home-shout {
     margin-bottom: 80px;
     margin-left: -20px; }
@@ -1025,6 +1061,7 @@ section.event {
 section.shop-articles .shopitem-bundle {
   display: block;
   width: 20%;
+  height: 380px;
   float: left;
   position: relative;
   margin: 2.5%;
@@ -1044,18 +1081,18 @@ section.shop-articles .shopitem-thumb {
   section.shop-articles .shopitem-thumb:after {
     content: '';
     display: block;
-    padding-top: 80%; }
+    padding-top: 100%; }
 
 section.shop-articles .shopitem-meta {
   position: absolute;
   left: 10px;
   right: 0;
-  bottom: -5px; }
+  bottom: -30px; }
 
 section.shop-articles .name {
   font-size: 18px; }
 
-section.shop-articles .price {
+section.shop-articles .prijs {
   font-size: 14px;
   font-weight: 600;
   color: orange; }
@@ -1066,35 +1103,90 @@ section.shop-articles .shopitem-thumb:hover .shopitem-meta {
       -ms-transform: translate(0%, 0%) scale(1);
           transform: translate(0%, 0%) scale(1); }
 
-section.item-detail .item-img-bundle {
-  display: block;
-  width: 80%;
-  float: right;
-  margin: 2.5%;
-  overflow: hidden; }
-
-section.item-detail:after {
-  content: '';
-  display: block;
-  padding-top: 100%; }
-
-section.item-detail .item-img {
-  display: block;
+section.shop-articles .webshop-hero {
+  background-image: url(../img/hero-bg.jpg);
+  background-position: center bottom;
   background-size: cover;
-  width: 100%;
-  float: left;
-  position: relative;
-  overflow: hidden; }
-  section.item-detail .item-img:after {
-    content: '';
-    display: block;
-    padding-top: 80%; }
+  height: 55vh;
+  margin-top: -70px; }
 
-section.item-detail .attribute {
-  display: inline-block;
-  width: 200px;
-  padding: 5px;
-  color: #ccc; }
+section.item-detail {
+  margin-top: 50px; }
+  section.item-detail .item-img-bundle {
+    display: block;
+    width: 500px;
+    height: 500px;
+    float: right;
+    position: relative;
+    overflow: hidden;
+    content: '';
+    display: block; }
+  section.item-detail .item-desc-bundle {
+    width: 50%;
+    display: inline;
+    float: left;
+    margin-left: 50px;
+    margin-right: 13px; }
+  section.item-detail .item-img {
+    display: block;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    float: left;
+    position: relative;
+    overflow: hidden; }
+    section.item-detail .item-img:after {
+      content: '';
+      display: block; }
+  section.item-detail .select-size {
+    display: inline-block;
+    width: 100%;
+    padding: 5px;
+    color: #ccc; }
+  section.item-detail .size-input {
+    font-size: 18px;
+    text-transform: uppercase; }
+  section.item-detail .select-amount {
+    display: inline-block;
+    width: 100%;
+    padding: 5px;
+    color: #ccc; }
+  section.item-detail .back-button {
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 30px;
+    padding-bottom: 10px; }
+  section.item-detail .item-name {
+    padding-top: 72px;
+    padding-bottom: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase; }
+  section.item-detail .item-description {
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  section.item-detail .addtocart-cta {
+    margin-top: 0; }
+    section.item-detail .addtocart-cta a {
+      color: white; }
+  section.item-detail .numbinput {
+    padding-right: 30px;
+    margin-top: 20px; }
+  section.item-detail .prijs {
+    font-size: 30px;
+    font-weight: 600;
+    color: orange;
+    float: right; }
+  section.item-detail .styled-select {
+    background: #E6E6E6;
+    border: none;
+    font-size: 14px;
+    height: 30px;
+    padding: 5px;
+    width: 200px;
+    float: right; }
+  section.item-detail .social-share {
+    margin-top: 20px; }
 
 .home-wrap {
   display: -webkit-box;
@@ -1154,6 +1246,9 @@ section.item-detail .attribute {
 
 .col-90 {
   width: 90%; }
+
+.col-100 {
+  width: 100%; }
 
 @media (max-width: 640px) {
   .home-sections .flex {

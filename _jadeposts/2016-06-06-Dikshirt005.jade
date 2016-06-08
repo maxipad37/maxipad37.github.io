@@ -1,0 +1,69 @@
+:verbatim
+  ---
+  layout: post
+  title: Nog een dikker shirt
+  thumbnail: post-4.png
+  prijs: €30,00
+  price: 30.00
+  description: Hoe dik wil je het hebben? 
+  ---
+
+section.item-detail
+
+  .flex.flex--center
+  
+    .col-50
+      
+      .item-img-bundle
+        .back-button
+          a(href="/webshop.html" class="back")< NAAR OVERZICHT
+      
+        .item-img
+          img(src='/assets/img/posts/thumbnails/{{page.thumbnail}}')
+      
+    .col-50
+      .item-desc-bundle
+        .item-name
+          a {{page.title}}
+
+        
+        .item-description
+          p Hier komt heel veel mooie tekst te staan over het shirtje. Gewoon een leuk verhaaltje om te lezen.
+    
+        .select-size
+          p.size-input size
+            select.styled-select(id="my-size")
+              option(value='') Kies een Maat
+              option(value='Small') SMALL
+              option(value='Medium') MEDIUM
+              option(value='Large') LARGE
+              option(value='SuperLarge') SUPER LARGE
+            
+        .select-amount  
+          p.numbinput Aantal    
+            input(type="number" id="my-quantity")
+
+          p.prijs {{page.prijs}}
+          
+        .addtocart-cta
+          a(            
+            class="snipcart-add-item"
+            id="my-button"
+            data-item-id="SUPERDIK-MEDIUM"
+            data-item-name="{{page.title}}"
+            data-item-price="{{page.price}}"
+            data-item-url="{{page.url}}"
+            data-item-description="{{page.description}}"
+            data-item-quantity="1"
+            data-item-custom1-name="Maat"
+            data-item-custom1-options="Small|Medium|Large|SuperLarge"
+            data-item-custom1-required="true"
+            ) IN DE WINKELMAND
+        
+        .social-share
+          div(
+            class="fb-like"
+            data-share="true"
+            data-width="450"
+            data-show-faces="true")
+        

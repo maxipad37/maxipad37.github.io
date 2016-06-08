@@ -4,7 +4,7 @@ var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
 var jade        = require('gulp-jade');
-
+var merge       = require ('merge-stream');
 
 var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
@@ -66,23 +66,36 @@ gulp.task('sass', function () {
 });
 
 /*
-* Travis is trying to Gulp stuff
+* Travis is trying to Gulp stuff: 'merge-stream' makes it possible to have multiple src and dest
 */
 
 gulp.task('jade', function(){
-  return gulp.src('_jadefiles/*.jade')
-  .pipe(jade())
-  .pipe(gulp.dest('_includes'));
+  var jadefiles = gulp.src('_jadefiles/*.jade')
+    .pipe(jade())
+    .pipe(gulp.dest('_includes'));
+
+  var jadeposts = gulp.src('_jadeposts/*.jade')
+    .pipe(jade())
+    .pipe(gulp.dest('_posts'));
+
+  return merge(jadefiles, jadeposts);
 });
+
 
 /*
-* jadeposts omzetten in html posts in
-*/
+* jadeposts omzetten in html posts in: deze doet alles dubbel.
+
 gulp.task('jade', function(){
-  return gulp.src('_jadeposts/*.jade')
-  .pipe(jade())
-  .pipe(gulp.dest('_posts'));
+  return gulp.src([
+      '_jadeposts/*.jade',
+      '_jadefiles/*.jade'
+    ])
+    .pipe(jade())
+    .pipe(gulp.dest('_posts'))
+    .pipe(gulp.dest('_includes'));
 });
+*/
+
 
 /**
  * Watch scss files for changes & recompile
