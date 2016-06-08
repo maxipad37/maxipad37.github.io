@@ -972,6 +972,36 @@ section.inspiration {
   section.inspiration h2 {
     color: white;
     margin-top: -20px; }
+  section.inspiration .fs-loop-video {
+    position: relative; }
+  section.inspiration video {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    margin-top: 700px;
+    margin-bottom: -850px; }
+  section.inspiration .fs-loop-text {
+    position: absolute;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.4);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: -70px;
+    margin-bottom: -88px; }
+    section.inspiration .fs-loop-text div {
+      color: white;
+      font-size: 76px;
+      text-align: center;
+      padding-top: 350px; }
 
 section.shirt {
   background-image: url(/assets/img/shirt-lachenman-bg.jpg);

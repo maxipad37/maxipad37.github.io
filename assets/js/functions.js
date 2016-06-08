@@ -132,3 +132,14 @@ $(window).resize(function() {
 });
 
 Snipcart.execute('config', 'show_continue_shopping', true);
+
+
+$(window).scroll(function() {
+   $('video').each(function(){
+       if ($(this).is(":in-viewport")) {
+           $(this)[0].play();
+       } else {
+           $(this)[0].pause();
+       }
+   })
+});

@@ -62,7 +62,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.2.0",
     "yargs": "^4.1.0",
-    "jstransformer-verbatim": "^1.0.0"
-
+    "jstransformer-verbatim": "^1.0.0",
+    "is-in-viewport": "^2.3.1"
   }
 }

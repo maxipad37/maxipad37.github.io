@@ -1,13 +1,9 @@
 section.inspiration#haha
-
-  .flex.flex--center  
-    .col-50.flex.flex--center
-      h2 LET'S GO BANANANAS
-
   .flex.flex--center
-    .col-50
-      .page-video.center-video <iframe width="800" height="450" src="https://www.youtube.com/embed/6IeT5QIjdOw" frameborder="0" allowfullscreen></iframe>
-
-  .flex.flex--center
-    .col-50.flex.flex--center
-      a(href="https://www.facebook.com/banananas-206578509676252/").home-cta Go banananas!
+    .col-100
+      .fs-loop-video
+        video(autoplay loop)
+          source(src="assets/video/This_SH-T_is_Banananas.mp4" type="video/mp4")
+          source(src="assets/video/This_SH-T_is_Banananas.webm" type="video/webm")
+        .fs-loop-text 
+          div DIT IS BANANANAS
