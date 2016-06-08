@@ -948,20 +948,24 @@ section.hero {
     margin-right: auto;
     max-width: 300px; } }
 
-section.how img {
-  float: left;
-  position: absolute; }
-
-section.how p {
-  float: right;
-  font-size: 24px;
-  position: relative;
-  padding-left: 160px;
-  margin-top: 40px; }
+section.how {
+  height: 250px; }
+  section.how img {
+    float: left;
+    position: absolute; }
+  section.how p {
+    float: right;
+    font-size: 24px;
+    position: relative;
+    text-align: left;
+    margin-top: 40px; }
+  section.how .how-container {
+    padding-top: 60px; }
 
 section.inspiration {
   background-color: black;
-  padding-top: 0px; }
+  padding-top: 0;
+  padding-bottom: 0; }
   section.inspiration .home-cta {
     background-color: red;
     color: white;
@@ -973,35 +977,34 @@ section.inspiration {
     color: white;
     margin-top: -20px; }
   section.inspiration .fs-loop-video {
-    position: relative; }
-  section.inspiration video {
     position: relative;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    margin-top: 700px;
-    margin-bottom: -850px; }
+    height: 100vh;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden; }
+    section.inspiration .fs-loop-video video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1; }
   section.inspiration .fs-loop-text {
     position: absolute;
+    padding-top: 50vh;
     z-index: 2;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.7);
     top: 0;
     bottom: 0;
     left: 0;
-    right: 0;
-    margin-top: -70px;
-    margin-bottom: -88px; }
+    right: 0; }
     section.inspiration .fs-loop-text div {
       color: white;
       font-size: 76px;
       text-align: center;
-      padding-top: 350px; }
+      line-height: 1.2em; }
 
 section.shirt {
   background-image: url(/assets/img/shirt-lachenman-bg.jpg);
@@ -1233,8 +1236,6 @@ section.item-detail {
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1; }
-  .home-sections section {
-    padding: 70px 0; }
   .home-sections .flex {
     display: -webkit-box;
     display: -webkit-flex;
