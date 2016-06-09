@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url(http://fonts.googleapis.com/css?family=Fira+Sans:400,400italic);
+@import url(https://fonts.googleapis.com/css?family=Comfortaa);
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -922,28 +923,48 @@ section.hero {
   background-image: url(../img/hero-bg.jpg);
   background-position: center top;
   background-size: cover;
-  height: 85vh; }
-  section.hero h2 {
-    color: #2E2D33;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1;
-    margin-top: 70px;
-    margin-left: -20px; }
+  height: 100vh; }
   section.hero p {
-    margin-top: 250px;
     color: white;
-    font-family: Montserrat;
-    font-weight: 600;
-    font-size: 88px; }
+    border-style: solid;
+    border-width: 2px; }
+  section.hero .home-letsgo {
+    color: white;
+    margin-left: -430px;
+    margin-bottom: 0px; }
+  section.hero .home-products {
+    color: white;
+    margin-top: -40px; }
   section.hero .home-lead {
-    margin-left: 20px; }
-  section.hero .home-shout {
-    margin-bottom: 80px;
-    margin-left: -20px; }
+    margin-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Comfortaa';
+    font-size: 72px;
+    font-weight: 700;
+    display: inline-block; }
+  section.hero .herologo-container {
+    margin-left: 500px;
+    margin-right: 500px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin-top: 60vh; }
+  section.hero .hero-logo {
+    display: inline-block;
+    vertical-align: middle; }
+  section.hero .bg-overlay {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
 
 @media (max-width: 640px) {
-  section.hero h2, section.hero .home-lead, section.hero .home-shout {
+  section.hero h2, section.hero .home-lead {
     margin-left: 100px;
     margin-right: auto;
     max-width: 300px; } }
