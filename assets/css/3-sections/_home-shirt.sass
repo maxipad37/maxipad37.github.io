@@ -1,24 +1,101 @@
 section.shirt
-  background:
-    image: url(/assets/img/shirt-lachenman-bg.jpg)
-    position: center top
-    size: cover
+  .shirtsection-container
+  text-align: center
+  z-index: 1
 
-  height: 700px
+  .shirt-background
+    height: 350px
+    background:
+      image: url(/assets/img/bycicle-chill.jpg)
+      position: center
+      size: cover
+    position: relative
 
-  h2
-    color: #58595b
-    font-size: 32px
-
-  .col-2
-    margin-top: 350px
-    margin-left: -350px
-    width: 450px
-
-  .home-cta
-    background-color: red
+  .shirt-desc
+    position: relative
+    display: inline-block
     color: white
+    line-height: 1em
+    padding-top: 100px
+    font-size: 60px
+
+  .shirtsection-newitems
+    margin-left: 50px
+    margin-top: 50px
+    text-align: left
+
+  .shirt-cta
+    color: white
+    font:
+      size: 18px
+    background: #DD453C
+    text-align: center
+    padding: 0.4em 2.5em
+    line-height: 1.25
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.3)
+    transition: all 0.1s ease-in-out
+    display: inline-flex
+    margin-bottom: 70px
+    border-radius: 5px
+
+    &:hover
+      box-shadow: 0px 5px 14px rgba(0,0,0,0.6)
+      color: white
+      background: #39AF4A
+
+  //shopitem section
+  .shopitem-bundle
+    display: block
+    //background-color: pink
+    width: 20%
+    height: 380px
+    float: left
+    position: relative
+    margin: 2.5%
+    overflow: hidden
+
+    &:after
+      content: ''
+      display: block
+      padding-top: 100%
+
+  .shopitem-thumb
+    display: block
+    background:
+      size: cover
+    width: 100%
+    float: left
+    position: relative
+    //margin: 2.5%
+    overflow: hidden
+
+    &:after
+      content: ''
+      display: block
+      padding-top: 100%
+
+  .shopitem-meta
+    position: absolute
+    left: 10px
+    right: 0
+    bottom: 10px
+    text-align: left
+
+    //background: fade-out(pink, 0.2)
+    //color: white
+    //padding: 10px
+    //transform: translate(0%, 100%) scale(0.5)
+    //transition: all 200ms ease-in-out
+    //opacity: 0
+
+  .name
     font-size: 18px
-    width: 250px
-    margin-left: 145px
-    margin-top: 40px
+
+  .prijs
+    font-size: 18px
+    font-weight: 600
+    color: orange
+
+  .shopitem-thumb:hover .shopitem-meta
+    opacity: 1
+    transform: translate(0%, 0%) scale(1)

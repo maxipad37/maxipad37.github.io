@@ -11,14 +11,13 @@ section.hero
       style: solid
       width: 2px
 
-  .home-letsgo
-    color: white
-    margin-left: -430px
-    margin-bottom: 0px
-
-  .home-products
-    color: white
-    margin-top: -40px
+  .herologo-container
+    margin-left: auto
+    margin-right: auto
+    position: relative
+    z-index: 1
+    text-align: center
+    margin-top: 60vh
 
   .home-lead
     margin-right: 20px
@@ -32,19 +31,18 @@ section.hero
       weight: 700
     display: inline-block
 
-  .herologo-container
-    margin-left: 500px
-    margin-right: 500px
-
-    position: relative
-    z-index: 1
-    text-align: center
-    margin-top: 60vh
-
   .hero-logo
     display: inline-block
     vertical-align: middle
 
+  .home-letsgo
+    color: white
+    margin-left: -430px
+    margin-bottom: 0px
+
+  .home-products
+    color: white
+    margin-top: -40px
 
   .bg-overlay
     position: absolute
@@ -56,11 +54,46 @@ section.hero
     left: 0
     right: 0
 
+@media (max-width: 550px)
+  section.hero
 
+    h4
+      font-size: 14px
+
+    .home-letsgo
+      margin-left: -300px
+
+    .home-products
+      color: white
+      margin-top: -25px
+      margin-right: -10px
+
+    .home-lead
+      margin-right: 20px
+      padding-top: 5px
+      padding-bottom: 5px
+      padding-left: 15px
+      padding-right: 15px
+      font:
+        size: 48px
+        weight: 700
+      display: inline-block
+
+    .herologo-container
+      margin-left: auto
+      margin-right: auto
+
+      position: relative
+      z-index: 1
+      text-align: center
+      margin-top: 40vh
+
+    .hero-logo
+      height: 100px
 
 
 @media (max-width: 640px)
-  section.hero
+  //section.hero
     h2, .home-lead
       margin-left: 100px
       margin-right: auto

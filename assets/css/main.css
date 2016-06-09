@@ -546,21 +546,24 @@ body {
   -webkit-text-size-adjust: 100%; }
 
 .home-cta {
-  color: #666;
-  font-size: 13px;
-  display: block;
-  background: black;
+  color: white;
+  font-size: 18px;
+  background: #DD453C;
   text-align: center;
-  padding: 0.4em;
+  padding: 0.4em 2.5em;
   line-height: 1.25;
   -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-  -webkit-transition: all 0.15s ease-in-out;
-  transition: all 0.15s ease-in-out; }
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  margin-bottom: 70px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px; }
   .home-cta:hover {
     -webkit-box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.6);
             box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.6);
-    color: #e20a0a; }
+    color: white;
+    background: #39AF4A; }
 
 .addtocart-cta {
   color: white;
@@ -763,7 +766,7 @@ nav.tn-nav-wrap {
   padding: 0;
   position: fixed;
   vertical-align: middle;
-  z-index: 1; }
+  z-index: 100; }
   .home-wrap header a {
     color: #999; }
     .home-wrap header a:hover, .home-wrap header a:active {
@@ -928,13 +931,13 @@ section.hero {
     color: white;
     border-style: solid;
     border-width: 2px; }
-  section.hero .home-letsgo {
-    color: white;
-    margin-left: -430px;
-    margin-bottom: 0px; }
-  section.hero .home-products {
-    color: white;
-    margin-top: -40px; }
+  section.hero .herologo-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin-top: 60vh; }
   section.hero .home-lead {
     margin-right: 20px;
     padding-top: 10px;
@@ -945,16 +948,16 @@ section.hero {
     font-size: 72px;
     font-weight: 700;
     display: inline-block; }
-  section.hero .herologo-container {
-    margin-left: 500px;
-    margin-right: 500px;
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    margin-top: 60vh; }
   section.hero .hero-logo {
     display: inline-block;
     vertical-align: middle; }
+  section.hero .home-letsgo {
+    color: white;
+    margin-left: -430px;
+    margin-bottom: 0px; }
+  section.hero .home-products {
+    color: white;
+    margin-top: -40px; }
   section.hero .bg-overlay {
     position: absolute;
     background: rgba(0, 0, 0, 0.6);
@@ -963,25 +966,68 @@ section.hero {
     left: 0;
     right: 0; }
 
-@media (max-width: 640px) {
-  section.hero h2, section.hero .home-lead {
-    margin-left: 100px;
+@media (max-width: 550px) {
+  section.hero h4 {
+    font-size: 14px; }
+  section.hero .home-letsgo {
+    margin-left: -300px; }
+  section.hero .home-products {
+    color: white;
+    margin-top: -25px;
+    margin-right: -10px; }
+  section.hero .home-lead {
+    margin-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 48px;
+    font-weight: 700;
+    display: inline-block; }
+  section.hero .herologo-container {
+    margin-left: auto;
     margin-right: auto;
-    max-width: 300px; } }
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin-top: 40vh; }
+  section.hero .hero-logo {
+    height: 100px; } }
 
 section.how {
   height: 250px; }
-  section.how img {
-    float: left;
-    position: absolute; }
   section.how p {
-    float: right;
-    font-size: 24px;
+    font-size: 32px;
     position: relative;
-    text-align: left;
-    margin-top: 40px; }
+    text-align: left; }
   section.how .how-container {
-    padding-top: 60px; }
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-top: 30px;
+    text-align: center; }
+  section.how .how-logo {
+    vertical-align: middle;
+    height: 160px;
+    margin-right: 50px;
+    display: inline-block;
+    position: relative;
+    margin-top: -120px; }
+  section.how .home-text {
+    line-height: 1.4em;
+    display: inline-block;
+    position: relative;
+    margin-top: 50px; }
+
+@media (max-width: 1500px) {
+  section.how p {
+    font-size: 24px; } }
+
+@media (max-width: 1235px) {
+  section.how p {
+    font-size: 22px; }
+  section.how .home-text {
+    line-height: 0.6em; } }
 
 section.inspiration {
   background-color: black;
@@ -1028,24 +1074,88 @@ section.inspiration {
       line-height: 1.2em; }
 
 section.shirt {
-  background-image: url(/assets/img/shirt-lachenman-bg.jpg);
-  background-position: center top;
-  background-size: cover;
-  height: 700px; }
-  section.shirt h2 {
-    color: #58595b;
-    font-size: 32px; }
-  section.shirt .col-2 {
-    margin-top: 350px;
-    margin-left: -350px;
-    width: 450px; }
-  section.shirt .home-cta {
-    background-color: red;
+  text-align: center;
+  z-index: 1; }
+  section.shirt .shirt-background {
+    height: 350px;
+    background-image: url(/assets/img/bycicle-chill.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative; }
+  section.shirt .shirt-desc {
+    position: relative;
+    display: inline-block;
+    color: white;
+    line-height: 1em;
+    padding-top: 100px;
+    font-size: 60px; }
+  section.shirt .shirtsection-newitems {
+    margin-left: 50px;
+    margin-top: 50px;
+    text-align: left; }
+  section.shirt .shirt-cta {
     color: white;
     font-size: 18px;
-    width: 250px;
-    margin-left: 145px;
-    margin-top: 40px; }
+    background: #DD453C;
+    text-align: center;
+    padding: 0.4em 2.5em;
+    line-height: 1.25;
+    -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin-bottom: 70px;
+    -webkit-border-radius: 5px;
+            border-radius: 5px; }
+    section.shirt .shirt-cta:hover {
+      -webkit-box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.6);
+              box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.6);
+      color: white;
+      background: #39AF4A; }
+  section.shirt .shopitem-bundle {
+    display: block;
+    width: 20%;
+    height: 380px;
+    float: left;
+    position: relative;
+    margin: 2.5%;
+    overflow: hidden; }
+    section.shirt .shopitem-bundle:after {
+      content: '';
+      display: block;
+      padding-top: 100%; }
+  section.shirt .shopitem-thumb {
+    display: block;
+    background-size: cover;
+    width: 100%;
+    float: left;
+    position: relative;
+    overflow: hidden; }
+    section.shirt .shopitem-thumb:after {
+      content: '';
+      display: block;
+      padding-top: 100%; }
+  section.shirt .shopitem-meta {
+    position: absolute;
+    left: 10px;
+    right: 0;
+    bottom: 10px;
+    text-align: left; }
+  section.shirt .name {
+    font-size: 18px; }
+  section.shirt .prijs {
+    font-size: 18px;
+    font-weight: 600;
+    color: orange; }
+  section.shirt .shopitem-thumb:hover .shopitem-meta {
+    opacity: 1;
+    -webkit-transform: translate(0%, 0%) scale(1);
+        -ms-transform: translate(0%, 0%) scale(1);
+            transform: translate(0%, 0%) scale(1); }
 
 section.limo {
   background-image: url(/assets/img/limo-bg.jpg);
