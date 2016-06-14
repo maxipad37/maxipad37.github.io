@@ -1,11 +1,12 @@
 :verbatim
   ---
   layout: post
-  title: Nog een dikker shirt
-  thumbnail: post-4.png
-  prijs: €30,00
-  price: 30.00
-  description: Hoe dik wil je het hebben? 
+  title: COMING SOON
+  itemid: 45678
+  thumbnail: 03coming-soon.png
+  prijs: €0,00
+  price: 0.00
+  description: Binnenkort verkgrijgbaar.
   ---
 
 section.item-detail
@@ -28,7 +29,7 @@ section.item-detail
 
         
         .item-description
-          p Hier komt heel veel mooie tekst te staan over het shirtje. Gewoon een leuk verhaaltje om te lezen.
+          p Binnenkort zijn hier vele vette kleren te verkrijgen! Haal alvast de super soakers van zolder, prepareer de erwtenschieters, die ene broek die niet vies mag worden van je moeder en je dikke glimlach!
     
         .select-size
           p.size-input size
@@ -50,7 +51,7 @@ section.item-detail
           a(            
             class="snipcart-add-item"
             id="my-button"
-            data-item-id="SUPERDIK-MEDIUM"
+            data-item-id="{{page.itemid}}"
             data-item-name="{{page.title}}"
             data-item-price="{{page.price}}"
             data-item-url="{{page.url}}"

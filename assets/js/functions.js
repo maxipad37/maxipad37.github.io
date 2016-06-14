@@ -144,5 +144,15 @@ $(window).scroll(function() {
    })
 });
 
-
 //$('video').click(function(){this.paused?this.play():this.pause();});
+
+$(function() {
+    $(window).on("scroll", function() {
+        if($(window).scrollTop() > 1) {
+            $("header").addClass("active");
+        } else {
+            //remove the background property so it comes transparent again (defined in your css)
+           $("header").removeClass("active");
+        }
+    });
+});
