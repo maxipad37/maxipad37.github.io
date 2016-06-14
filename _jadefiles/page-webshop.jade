@@ -1,10 +1,19 @@
-section.page-webshop
-
-  .flex.flex--center  
-    .col-50.flex.flex--center
-      h3.text-center UNDER CONSTRUCTION...
-      h4.text-center So first...
-  
+section.shop-articles
   .flex.flex--center
-    .col-50
-      .page-video.center-video <iframe width="800" height="400" src="https://www.youtube.com/embed/9aR73t8VWco" frameborder="0" allowfullscreen></iframe>
+    .col-100
+      .webshop-hero
+
+  .flex.flex--center
+    .col-90
+      .shopitem-wrap
+      
+        |{% for post in site.posts %}
+      
+        .shopitem-bundle
+          a(href="{{post.url}}" style="background-image: url(assets/img/posts/thumbnails/{{post.thumbnail}})").shopitem-thumb
+          a(href="{{post.url}}").shopitem-meta
+            .name {{post.title}}
+            .prijs {{post.prijs}}
+            hr
+             
+        |{% endfor %}

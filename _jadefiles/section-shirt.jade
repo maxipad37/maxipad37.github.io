@@ -1,6 +1,25 @@
 section.shirt#kleding
+  .flex.flex--center
+    .col-100
+      .shirtsection-container
+        .shirt-background
+          .shirt-desc
+            p CASUAL KLEREN WAAR JIJ
+            p JE LEKKER IN VOELT
 
   .flex.flex--center
-    .col-2
-      h2 Comfortabele casual kleding met een kniphoog ;)
-      a.home-cta(href="/webshop.html") IK WIL CHILLE KLEREN!
+    .col-90
+      .shirtsection-newitems
+        h3 NIEUWSTE ITEMS
+        
+      |{% for post in site.posts limit: 4 %}
+    
+      .shopitem-bundle
+        a(href="{{post.url}}" style="background-image: url(assets/img/posts/thumbnails/{{post.thumbnail}})").shopitem-thumb
+        a(href="{{post.url}}").shopitem-meta
+          .name {{post.title}}
+          .prijs {{post.prijs}}
+           
+      |{% endfor %}
+      
+      a.shirt-cta(href="/webshop.html") IK WIL MEER ZIEN!

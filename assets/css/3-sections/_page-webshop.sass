@@ -1,0 +1,64 @@
+section.shop-articles
+
+  .shopitem-bundle
+    display: block
+    //background-color: pink
+    width: 20%
+    height: 380px
+    float: left
+    position: relative
+    margin: 2.5%
+    overflow: hidden
+
+    &:after
+      content: ''
+      display: block
+      padding-top: 100%
+
+  .shopitem-thumb
+    display: block
+    background:
+      size: cover
+    width: 100%
+    float: left
+    position: relative
+    //margin: 2.5%
+    overflow: hidden
+
+    &:after
+      content: ''
+      display: block
+      padding-top: 100%
+
+  .shopitem-meta
+    position: absolute
+    left: 10px
+    right: 0
+    bottom: -30px
+
+    //background: fade-out(pink, 0.2)
+    //color: white
+    //padding: 10px
+    //transform: translate(0%, 100%) scale(0.5)
+    //transition: all 200ms ease-in-out
+    //opacity: 0
+
+  .name
+    font-size: 18px
+
+  .prijs
+    font-size: 14px
+    font-weight: 600
+    color: orange
+
+  .shopitem-thumb:hover .shopitem-meta
+    opacity: 1
+    transform: translate(0%, 0%) scale(1)
+
+  .webshop-hero
+    background:
+      image: url(../img/hero-bg.jpg)
+      position: center bottom
+      size: cover
+    height: 55vh
+    margin-top: -70px

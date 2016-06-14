@@ -3,35 +3,98 @@ section.hero
     image: url(../img/hero-bg.jpg)
     position: center top
     size: cover
-
-  h2
-    color: #2E2D33
-    font:
-      size: 36px
-      weight: 700
-    line-height: 1
-    margin-top: 70px
-    margin-left: -20px
+  height: 100vh
 
   p
-    margin-top: 250px
-    margin-bottom: 200px
-    color: black
-    font:
-      family: Montserrat
-      weight: 400
-      size: 36px
+    color: white
+    border:
+      style: solid
+      width: 2px
+
+  .herologo-container
+    margin-left: auto
+    margin-right: auto
+    position: relative
+    z-index: 1
+    text-align: center
+    margin-top: 60vh
 
   .home-lead
-    margin-left: -20px
+    margin-right: 20px
+    padding-top: 10px
+    padding-bottom: 10px
+    padding-left: 20px
+    padding-right: 20px
+    font-family: 'Comfortaa'
+    font:
+      size: 72px
+      weight: 700
+    display: inline-block
 
-  .home-shout
-    margin-bottom: 80px
-    margin-left: -20px
+  .hero-logo
+    display: inline-block
+    vertical-align: middle
+
+  .home-letsgo
+    color: white
+    margin-left: -430px
+    margin-bottom: 0px
+
+  .home-products
+    color: white
+    margin-top: -40px
+
+  .bg-overlay
+    position: absolute
+    //padding-top: 50vh
+    //z-index: 2
+    background: rgba(0,0,0,0.6)
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+
+@media (max-width: 550px)
+  section.hero
+
+    h4
+      font-size: 14px
+
+    .home-letsgo
+      margin-left: -300px
+
+    .home-products
+      color: white
+      margin-top: -25px
+      margin-right: -10px
+
+    .home-lead
+      margin-right: 20px
+      padding-top: 5px
+      padding-bottom: 5px
+      padding-left: 15px
+      padding-right: 15px
+      font:
+        size: 48px
+        weight: 700
+      display: inline-block
+
+    .herologo-container
+      margin-left: auto
+      margin-right: auto
+
+      position: relative
+      z-index: 1
+      text-align: center
+      margin-top: 40vh
+
+    .hero-logo
+      height: 100px
+
 
 @media (max-width: 640px)
-  section.hero
-    h2, .home-lead, .home-shout
+  //section.hero
+    h2, .home-lead
       margin-left: 100px
       margin-right: auto
       max-width: 300px
