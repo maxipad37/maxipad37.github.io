@@ -36,6 +36,7 @@ section.shirt
     box-shadow: 0px 4px 8px rgba(0,0,0,0.3)
     transition: all 0.1s ease-in-out
     display: inline-flex
+    margin-top: 20px
     margin-bottom: 70px
     border-radius: 5px
 
@@ -49,7 +50,17 @@ section.shirt
     display: block
     //background-color: pink
     width: 20%
-    height: 380px
+    //height: 380px
+    float: left
+    position: relative
+    margin: 2.5%
+    overflow: hidden
+
+  .shopitem-thumb
+    display: block
+    background:
+      size: cover
+    width: 100%
     float: left
     position: relative
     margin: 2.5%
@@ -60,34 +71,14 @@ section.shirt
       display: block
       padding-top: 100%
 
-  .shopitem-thumb
-    display: block
-    background:
-      size: cover
-    width: 100%
-    float: left
-    position: relative
-    //margin: 2.5%
-    overflow: hidden
-
-    &:after
-      content: ''
-      display: block
-      padding-top: 100%
-
   .shopitem-meta
-    position: absolute
+    position: abs
     left: 10px
     right: 0
     bottom: 10px
     text-align: left
-
-    //background: fade-out(pink, 0.2)
-    //color: white
-    //padding: 10px
-    //transform: translate(0%, 100%) scale(0.5)
-    //transition: all 200ms ease-in-out
-    //opacity: 0
+    vertical-align: text-top
+    //top: 220px
 
   .name
     font-size: 18px
@@ -100,3 +91,54 @@ section.shirt
   .shopitem-thumb:hover .shopitem-meta
     opacity: 1
     transform: translate(0%, 0%) scale(1)
+
+  @media (max-width: 850px)
+    .col-90
+      //margin-left: auto
+
+    .shopitem-bundle
+      width: 22%
+      margin: 1%
+
+  @media (max-width: 640px)
+    .col-90
+      margin-left: auto
+
+    .shirtsection-newitems
+      margin: 0
+
+    .shopitem-bundle
+      width: 20%
+      margin: 1%
+
+    .name
+      font-size: 14px
+
+    .prijs
+      font-size: 14px
+
+  @media (max-width: 535px)
+    .shirt-desc
+      font-size: 48px
+
+  @media (max-width: 505px)
+    //.col-90
+      margin-left: auto
+
+    .shopitem-bundle
+      width: 40%
+      margin: 2.5%
+
+    .name
+      font-size: 14px
+
+    .prijs
+      font-size: 14px
+
+  @media (max-width: 330px)
+    .shirt-desc
+      font-size: 32px
+      padding-top: 50px
+
+    .shirt-background
+      height: 200px

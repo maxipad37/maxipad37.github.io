@@ -1,9 +1,7 @@
 .home-wrap
-  display: flex
+  display: block
   min-height: 100vh
-
-  @media (max-width: 775px)
-    display: block
+  overflow: hidden
 
 .home-sections
   flex: 1
@@ -55,6 +53,7 @@
 @media (max-width: 640px)
   .home-sections .flex
     display: block
+    +clearfix
 
   .col-1
     width: 100%
