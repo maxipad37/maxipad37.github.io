@@ -1506,14 +1506,13 @@ section.shop-articles .webshop-hero {
 section.item-detail {
   margin-top: 50px; }
   section.item-detail .item-img-bundle {
-    display: block;
     width: 500px;
     height: 500px;
     float: right;
     position: relative;
     overflow: hidden;
     content: '';
-    display: block; }
+    display: inline-table; }
   section.item-detail .item-desc-bundle {
     width: 50%;
     display: inline;
