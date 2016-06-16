@@ -1324,68 +1324,11 @@ section.limo .home-cta {
 @media (max-width: 1225px) {
   section.limo .limo-desc-wrap {
     margin-left: 0%;
-    margin-right: 100px; } }
-
-@media (max-width: 1150px) {
-  section.limo .limo-desc-wrap {
-    margin-left: -15%;
-    margin-right: 200px; } }
-
-@media (max-width: 1050px) {
-  section.limo .limo-desc-wrap {
-    margin-left: -25%;
-    margin-right: 300px; }
-    section.limo .limo-desc-wrap h2 {
-      font-size: 28px; } }
-
-@media (max-width: 1050px) {
-  section.limo .push-right {
-    margin-left: 50%; }
-  section.limo .limo-desc-wrap {
-    margin-left: 5%;
-    margin-right: 200px; } }
-
-@media (max-width: 850px) {
-  section.limo .push-right {
-    margin-left: 50%; }
-  section.limo .limo-desc-wrap {
-    margin-left: 5%;
-    margin-right: 200px; }
-    section.limo .limo-desc-wrap h2 {
-      font-size: 24px; } }
-
-@media (max-width: 750px) {
-  section.limo .push-right {
-    margin-left: 50%; }
-  section.limo .limo-desc-wrap {
-    margin-left: 5%;
-    margin-right: 250px; }
-    section.limo .limo-desc-wrap h2 {
-      font-size: 20px; } }
-
-@media (max-width: 750px) {
-  section.limo .col-2 {
-    width: 90%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto; }
-  section.limo .push-right {
-    margin-left: auto;
-    margin-right: auto; }
-  section.limo .limo-desc-wrap {
-    margin-left: auto;
-    margin-right: auto; }
-    section.limo .limo-desc-wrap h2 {
-      font-size: 20px; } }
+    margin-right: 20px; } }
 
 @media (max-width: 340px) {
   section.limo .limo-desc {
-    font-size: 48px; }
-  section.limo .home-cta {
-    background-color: red;
-    color: white;
-    font-size: 18px;
-    width: 300px; } }
+    font-size: 48px; } }
 
 section.event {
   background-image: url(/assets/img/event-bg.jpg);
@@ -1402,12 +1345,11 @@ section.event {
   section.event .event-desc-wrap {
     width: 850px;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    margin-top: 40vh; }
     section.event .event-desc-wrap h3 {
       color: white;
-      font-size: 48px;
-      margin-top: 0;
-      padding-top: 40vh; }
+      font-size: 48px; }
   section.event .home-cta {
     background-color: red;
     color: white;
@@ -1419,11 +1361,6 @@ section.event {
               box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.6);
       color: white;
       background: #39AF4A; }
-  @media (max-width: 850px) {
-    section.event .event-desc-wrap {
-      width: 90%; }
-      section.event .event-desc-wrap h3 {
-        font-size: 32px; } }
 
 .contact a {
   color: white;
@@ -1639,10 +1576,6 @@ section.item-detail {
 @media (max-width: 640px) {
   .home-sections .flex {
     display: block; }
-    .home-sections .flex::after {
-      clear: both;
-      content: "";
-      display: table; }
   .col-1 {
     width: 100%; }
   .col-50 {
