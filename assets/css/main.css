@@ -1593,6 +1593,19 @@ section.item-detail {
     font-weight: 600;
     color: orange;
     float: right; }
+  section.item-detail .payment-icons {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex; }
+    section.item-detail .payment-icons p {
+      color: black;
+      margin-right: 20px;
+      margin-top: 8px; }
+    section.item-detail .payment-icons img {
+      margin-right: 15px;
+      width: 35px;
+      height: 35px; }
   section.item-detail .styled-select {
     background: #E6E6E6;
     border: none;
