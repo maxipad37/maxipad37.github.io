@@ -2,7 +2,7 @@
   ---
   layout: post
   title: COMING SOON
-  itemid: 23456
+  itemid: 12345
   thumbnail: 01coming-soon.png
   prijs: €0,00
   price: 0.00
@@ -44,10 +44,17 @@ section.item-detail
             
         .select-amount  
           p.numbinput Aantal    
-            input(type="number" id="my-quantity")
+            input(type="number" min="0" id="my-quantity")
 
           p.prijs {{page.prijs}}
-          
+        
+          .payment-icons
+            p Veilig betalen met:
+            img(src='/assets/img/pay-ideal.png')
+            img(src='/assets/img/pay-paypal.png')
+            img(src='/assets/img/pay-mastercard.png')
+            img(src='/assets/img/pay-visa.png')
+            
         .addtocart-cta
           a(            
             class="snipcart-add-item"
