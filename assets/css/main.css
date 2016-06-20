@@ -1561,7 +1561,8 @@ section.item-detail {
     color: #ccc; }
   section.item-detail .size-input {
     font-size: 18px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    color: #58595B; }
   section.item-detail .select-amount {
     display: inline-block;
     width: 100%;
@@ -1587,27 +1588,32 @@ section.item-detail {
       color: white; }
   section.item-detail .numbinput {
     padding-right: 30px;
-    margin-top: 20px; }
+    margin-top: 20px;
+    color: #58595B; }
   section.item-detail .prijs {
     font-size: 30px;
     font-weight: 600;
     color: orange;
-    float: right; }
+    float: right;
+    padding-top: 5px; }
   section.item-detail .payment-icons {
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
     display: inline-flex; }
     section.item-detail .payment-icons p {
-      color: black;
+      color: #58595B;
       margin-right: 20px;
       margin-top: 8px; }
-    section.item-detail .payment-icons img {
-      margin-right: 15px;
-      width: 35px;
-      height: 35px; }
+    section.item-detail .payment-icons .payment-container {
+      float: right; }
+      section.item-detail .payment-icons .payment-container img {
+        margin-right: 15px;
+        width: 35px;
+        height: 35px; }
   section.item-detail .styled-select {
-    background: #E6E6E6;
+    color: white;
+    background: #58595B;
     border: none;
     font-size: 14px;
     height: 30px;
