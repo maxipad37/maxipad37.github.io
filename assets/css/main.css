@@ -1472,6 +1472,15 @@ section.event {
   .contact a:hover {
     background: #d82121; }
 
+footer.address {
+  background-color: black;
+  height: 60px;
+  text-align: center; }
+  footer.address p {
+    padding-top: 20px;
+    font-size: 14px;
+    color: white; }
+
 section.shop-articles header {
   background: rgba(0, 0, 0, 0.5); }
 
