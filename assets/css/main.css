@@ -1484,6 +1484,13 @@ footer.address {
 section.shop-articles header {
   background: rgba(0, 0, 0, 0.5); }
 
+section.shop-articles .webshop-hero {
+  background-image: url(../img/hero-bg.jpg);
+  background-position: center bottom;
+  background-size: cover;
+  height: 55vh;
+  margin-top: -70px; }
+
 section.shop-articles .shopitem-bundle {
   display: block;
   width: 20%;
@@ -1528,13 +1535,6 @@ section.shop-articles .shopitem-thumb:hover .shopitem-meta {
   -webkit-transform: translate(0%, 0%) scale(1);
       -ms-transform: translate(0%, 0%) scale(1);
           transform: translate(0%, 0%) scale(1); }
-
-section.shop-articles .webshop-hero {
-  background-image: url(../img/hero-bg.jpg);
-  background-position: center bottom;
-  background-size: cover;
-  height: 55vh;
-  margin-top: -70px; }
 
 section.item-detail {
   margin-top: 50px; }
@@ -1631,6 +1631,40 @@ section.item-detail {
     float: right; }
   section.item-detail .social-share {
     margin-top: 20px; }
+
+section.designers .designer-hero {
+  text-align: center;
+  background-image: url(../img/designers-bg.jpg);
+  background-position: center top;
+  background-size: cover;
+  height: 100vh;
+  position: relative; }
+  section.designers .designer-hero .overlay-bgblack {
+    background: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    position: relative;
+    width: 100%; }
+
+section.designers .designer-desc {
+  position: relative;
+  display: inline-block;
+  color: white;
+  line-height: 1em;
+  padding-top: 100px;
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: 300px; }
+  section.designers .designer-desc h3 {
+    color: white; }
+
+section.designers .designer-text {
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 100px; }
+  section.designers .designer-text h2 {
+    text-align: center; }
+  section.designers .designer-text h3 {
+    margin-left: 100px; }
 
 .home-wrap {
   display: block;
